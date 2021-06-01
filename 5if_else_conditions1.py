@@ -1,3 +1,6 @@
+#you can add a condition using if and else statements
+
+
 convert_to_units = 24
 name_of_unit = "hours"
 

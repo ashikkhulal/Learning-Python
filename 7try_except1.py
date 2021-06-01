@@ -1,4 +1,4 @@
-#loop can be nested inside of a loop, however, too many nested loop is not recommended inside loops
+#you can handle errors catching with try/except as well
 
 
 convert_to_units = 24
@@ -9,14 +9,14 @@ def days_to_units(num_of_days):
         return f"{num_of_days} days are {num_of_days * convert_to_units} {name_of_unit}."
 
 def validate_and_execute():
-    if user_input.isdigit():
+    try:
         user_input_number = int(user_input)
         if user_input_number > 0:
             calculated_value = days_to_units(user_input_number)
             print(calculated_value)
         elif user_input_number == 0:
             print("you entered a 0, please enter a positive number greater than zero")
-    else:
+    except:
         print("your input is not a valid number. i cannot proceed forward!")
 
 

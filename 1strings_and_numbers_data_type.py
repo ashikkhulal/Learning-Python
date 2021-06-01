@@ -1,3 +1,6 @@
+#you can use strings and numbers as a data type/ value
+
+
 print(20)
 
 

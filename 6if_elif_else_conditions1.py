@@ -1,3 +1,6 @@
+#if elif and else can be used if you have more if conditions to apply
+
+
 convert_to_units = 24
 name_of_unit = "hours"
 
