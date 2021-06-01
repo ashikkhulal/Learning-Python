@@ -1,4 +1,4 @@
-#loop can be nested inside of a loop, however, too many nested loop is not recommended inside loops
+#conditions can be nested inside of a condition, however, too many nested loop is not recommended inside loops
 
 
 convert_to_units = 24

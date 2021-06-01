@@ -16,6 +16,8 @@ def validate_and_execute():
             print(calculated_value)
         elif user_input_number == 0:
             print("you entered a 0, please enter a positive number greater than zero")
+        else:
+            print("you entered a negative number, no conversion for you")
     except ValueError:
         print("your input is not a valid number. i cannot proceed forward!")
 
