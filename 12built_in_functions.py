@@ -1,4 +1,4 @@
-#let user exit the program
+#python provides us built-in functions like print(), set(), int() etc. Each data type has its own built-in functions and that are useful/ makes sense only for that specific data type
 
 
 convert_to_units = 24
