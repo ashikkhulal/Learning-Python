@@ -1,4 +1,4 @@
-#let user exit the program
+#sets are another built-in data type of python, and as with lists, it is used to store multiple items of data. It does not allow duplicate values
 
 
 convert_to_units = 24
@@ -10,7 +10,7 @@ def days_to_units(num_of_days):
 
 def validate_and_execute():
     try:
-        user_input_number = int(user_input)
+        user_input_number = int(num_of_days_element)
         if user_input_number > 0:
             calculated_value = days_to_units(user_input_number)
             print(calculated_value)
@@ -24,5 +24,14 @@ def validate_and_execute():
 
 user_input = ""
 while user_input != "exit":
-    user_input = input("Hey user, enter the number of days and I will magically convert it to hours!\n")
-    validate_and_execute()
+    user_input = input("Hey user, enter a number or list of days, separated by commas, and I will magically convert it to hours!\n")
+    list_of_days = user_input.split(", ")
+    
+    print(list_of_days)
+    print(set(list_of_days))
+    
+    print(type(list_of_days))
+    print(type(set(list_of_days)))
+    
+    for  num_of_days_element in set(list_of_days):
+        validate_and_execute()
