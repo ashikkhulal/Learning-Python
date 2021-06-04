@@ -1,8 +1,9 @@
-#Modules logically organizes your python code. Module should contain related code
-#one way is using import <file name> and specifying below on functions
-#another way is to do from helper import <function name>
+#python has a built in modules like math, os, date for your use
 
-from helper import validate_and_execute
+import OS
+    print(OS)
+
+"""from helper import validate_and_execute
 user_input = ""
 while user_input != "exit":
     user_input = input("Hey user, enter number of days and conversion unit, separated by colon(:)!\n")
@@ -11,5 +12,5 @@ while user_input != "exit":
     print("You entered: ")
     print(days_and_unit_dictionary)
     print(type(days_and_unit_dictionary))
-    validate_and_execute(days_and_unit_dictionary)
+    validate_and_execute(days_and_unit_dictionary)"""
     
